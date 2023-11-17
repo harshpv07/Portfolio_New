@@ -1,0 +1,63 @@
+.containerr {
+    position: relative;
+    width: 100%;
+     /* Set the maximum width for the container */
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  /* Media query for responsive font size */
+  @media (max-width: 600px) {
+    .text {
+      font-size: 14px;
+    }
+  }
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    padding-right: 10px;
+    margin: auto 0;
+  }
+
+  #profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+  }
+  
+.section__text {
+  align-self: center;
+  text-align: center;
+  color: white;
+}
+
+.section__text p {
+  color: white;
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+  color: white;
+}
