@@ -1,362 +1,639 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> portfolio project</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="static/css/contact_form.css">
-        <link rel="stylesheet" href="static/css/landing_page.css">
-        <link rel="stylesheet" href="static/css/timeline.css">
-        <link rel="stylesheet" href="static/css/typewriting.css">
-        <link rel="stylesheet" href="static/css/video.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hpv</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body >
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-MDBkWg2Ck6Zgt2B8WvMzvlvNTY2WbunYbAvaOdM5+29fougl26YBhlmNJqX89unlnhqJIKhST1jbtSjUvGjn6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/13ccb33514.js" crossorigin="anonymous"></script>
 
-    </head>
-    <body>
-      
-            <nav class="navbar navbar-expand-lg" style = "background-color: #E8E7E8;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#" >Harsh P V</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="#section_landing">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#section_projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#section_techstack">Tech Stack</a>
-                    </li>  
-                    <li class="nav-item">
-                      <a class="nav-link" href="#section_timeline">Previous Experiences</a>
-                    </li> 
-                    <li class="nav-item">
-                      <a class="nav-link" onclick="window.open('static/resume/resume.pdf')">Resume</a>
-                    </li> 
-                    <li class="nav-item">
-                      <a class="nav-link" href="#section_contact">Chat</a>
-                    </li> 
-                </ul>
-                <div class="collapse navbar-collapse" id="navbarButtonsExample">
-                  <!-- Left links -->
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      
-                  </ul>
-                  <!-- Left links -->
-      
-                  <ul class="navbar-nav d-flex flex-row">
-                      <!-- Icons -->
-                      
-                      <li class="nav-item me-3 me-lg-0">
-                          <a class="nav-link" href="https://www.instagram.com/harshsnapinsta/">
-                              <i class="fab fa-instagram text-dark"></i>
-                          </a>
-                      </li>
-                      <li class="nav-item me-3 me-lg-0">
-                          <a class="nav-link" href="https://www.linkedin.com/in/harsh-pv-988b66146/">
-                              <i class="fab fa-linkedin text-dark"></i>
-                          </a>
-                      </li>
-                      <li class="nav-item me-3 me-lg-0">
-                          <a class="nav-link" href="https://github.com/harshpv07">
-                              <i class="fab fa-github text-dark"></i>
-                          </a>
-                      </li>
-                  </ul>
-              </div>
+    <div class="jumbotron jumbotron-fluid" style=" background-color:rgb(144, 242, 247); margin-bottom:0px;">
+      <div class="container">
+          <div class="row">
+
+            <div class="col">
+                <h1 class="display-4  text-center">I'm Harsh.</h1>
+                <p class="lead text-center">Welcome to my page !! </p>
+                <br><hr><br>
+                <div class="container">
+                  <div class="row">
+                    <div class="col" style="border: 1px solid black; border-radius:20px;min-width:250px;min-height:50px; margin:10px;">
+                        <a class="nav-link  text-center" href="#projects" style="color:rgb(16, 16, 16);"><img src="Images/project.png" class="float-left" width="30" height="30" alt="" loading="lazy">Projects</a>
+                    </div>
+                    <div class="col" style="border: 1px solid black; border-radius:20px;min-width:250px;min-height:50px; margin:10px;">
+                        <a class="nav-link  text-center" href="#journey" style="color:rgb(16, 16, 16);"><img src="Images/work.png" class="float-left" width="30" height="30" alt="" loading="lazy">Experience</a>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col" style="border: 1px solid black; border-radius:20px;min-width:250px;min-height:50px; margin:10px;">
+                        <a class="nav-link text-center" href="#tech" style="color:rgb(16, 16, 16);"><img src="Images/tool.png" class="float-left" width="30" height="30" alt="" loading="lazy">Technical Skills</a>
+                    </div>
+                    <div class="col" style="border: 1px solid black; border-radius:20px;min-width:250px;min-height:50px; margin:10px;">
+                        <a class="nav-link text-center" href="#about" style="color:rgb(16, 16, 16);"><img src="Images/more.png" class="float-left" width="30" height="30" alt="" loading="lazy">More About Me</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" style="border: 1px solid black; border-radius:20px;min-width:250px;max-width:520px;min-height:50px; margin:10px;">
+                <a class="nav-link text-center" href="resume.pdf" target="_blank" style="color:rgb(16, 16, 16);" download="resume"><img src="Images/load.png" style="margin-right:10px;" width="30" height="30" alt="" loading="lazy">Resume</a>
+                </div>
+
+                <div class="social-media-handle text-center">
+                    <a href="#" class="social-media-link"><i class="fab fa-facebook social-media-icon"></i>Facebook</a>
+                    <a href="#" class="social-media-link"><i class="fab fa-twitter social-media-icon"></i>Twitter</a>
+                    <br>
+                    <a href="#" class="social-media-link"><i class="fab fa-instagram social-media-icon"></i>Instagram</a>
+                    <br>
+                    <a href="#" class="social-media-link"><i class="fab fa-linkedin social-media-icon"></i>LinkedIn</a>
                 </div>
             </div>
-            </nav>
 
-
-
-
-
-<!-- Introduction section -->
-<!-- <div class="section-landing">
-  <div class = "container-fluid p-0" style = "width : 100%; position : relative;">
-    <img src = "{% static '/images/landing_page.jpeg' %}" style = "width: 100%; " />
-  </div>
-</div> -->
-
-<section id="profile" style = "background-color: black">
-  <div class="section__pic-container">
-    <img src="static/images/harsh.jpg" alt="Harsh Photo" />
-  </div>
-  <div class="section__text">
-    <p class="section__text__p1">Hello, I'm</p>
-    <h1 class="title">Harsh P V</h1>
-    <p class="section__text__p2">An Aspiring Backend Developer </p><br>
-    <p class = "section__text__p2">I have previously worked with Cisco for 2+ years as a Solutions Engineer, <br>designing and developing software solutions for customers.</p>
-  </div>
-</section>
-
-
-<!-- Project Section -->
-<section style = "background-color:#E8E7E8; padding-bottom : 40px;" id = "section_projects">
-  <div class = "container" style = "align-items: center;" >
-    <div class="row">
-      <div class="col-lg-12 p-5">
-        <h1 style = "text-align: center;">My Projects</h1>
-        <p style = "text-align: center; font-size : 20px;">These are some of the projects that I have undertaken during my time in school !! </p>
+            <div class="col">
+              <img src="Images/harsh.jpg" class="img-fluid" alt="" loading="lazy" width="550" height="600" style="padding-top:100px;padding-left:100px; overflow:hidden;">
+            </div>
+          </div>
       </div>
     </div>
-    <div class="row" style = "align-items: center;">
-        <div class="col-lg-4 p-1 m-0">
-          .<div class="card text-dark"  style = "background-color : #ffffff;width : 300px ; height : 400px;">
-            <img class="card-img-top" src = "static/images/Blind.jpg" alt="Card image" style="width:100%" height = "50%">
-            <div class="card-body">
-              <h4 class="card-title">Personal Assistant for the Blind</h4>
-              <p class="card-text">An AI enabled personal assistant for the blind</p>
-              <a class="card-text" href="https://github.com/harshpv07">
-                <i class="fab fa-github text-dark"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-       
-        <div class="col-lg-4 p-1 m-0">
-          .<div class="card text-dark"  style = "background-color : #ffffff;width : 300px ; height : 400px;">
-            <img class="card-img-top" src = "static/images/survailance.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Personal Survillance Assistant</h4>
-              <p class="card-text">AI based survillance assistant for the police</p>
-              <a class="card-text" href="https://github.com/harshpv07">
-                <i class="fab fa-github text-dark"></i>
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-lg-4 p-1 m-0">
-          .<div class="card text-dark"  style = "background-color : #ffffff;width : 300px ; height : 400px;">
-            <img class="card-img-top" src = "static/images/Deveaid.jpg" alt="Card image" style="width:100%" height = "50%">
-            <div class="card-body">
-              <h4 class="card-title">DeveAid</h4>
-              <p class="card-text">A smart assistant for developers</p>
-              <a class="card-text" href="https://github.com/harshpv07">
-                <i class="fab fa-github text-dark"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+    <div class="jumbotron jumbotron-fluid" id="projects" style="background-color:rgb(0, 0, 0); margin-bottom:0px;">
+        <div class="container" style="color:rgb(132, 201, 251);">
+            <h1 class="display-4">Academic and Research Projects</h1>
+            <br>
+            <br>
+            <div class="row">
 
-        <div class="col-lg-4 p-1 m-0">
-          .<div class="card text-dark"  style = "background-color : #ffffff;width : 300px ; height : 400px;">
-            <img class="card-img-top" src = "static/images/llm.jpg" alt="Card image" style="width:100%" height = "50%">
-            <div class="card-body">
-              <h4 class="card-title">NetAutoLLM</h4>
-              <p class="card-text">Ease network automation using LLM</p>
-              <a class="card-text" href="https://github.com/harshpv07">
-                <i class="fab fa-github text-dark"></i>
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-lg-4 p-1 m-0">
-          .<div class="card text-dark"  style = "background-color : #ffffff;width : 300px ; height : 400px;">
-            <img class="card-img-top" src = "static/images/covid.jpg" alt="Card image" style="width:100%" height = "50%">
-            <div class="card-body">
-              <h4 class="card-title">Covid Risk index</h4>
-              <p class="card-text">Estimate the risk of contracting CoVid based on 50+ paramters</p>
-              <a class="card-text" href="https://github.com/harshpv07">
-                <i class="fab fa-github text-dark"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+                <div class="col-sm-6">
+                    <div class="card slideanim" style="background-color:rgb(24, 24, 24); margin-bottom:50px; border-radius:20px;">
+                        <div class="card-body hvr-bob">
+                            <h5 class="card-title" style="font-weight: 300;font-size:24px;">Clarity
+                                <a href="<title>" target="_blank" data-toggle="tooltip" data-placement="top" title="View the Clarity source code on Github">
+                                    <img src="Images/Fork.png" class="rounded float-right" width="30" height="30" alt="" loading="lazy">
+                                </a>
+                                
 
-        <div class="col-lg-4 p-1 m-0">
-          .<div class="card text-dark"  style = "background-color : #ffffff;width : 300px ; height : 400px;">
-            <img class="card-img-top" src = "static/images/chat.png" alt="Card image" style="width:100%" height = "50%">
-            <div class="card-body">
-              <h4 class="card-title">Hiring Bot</h4>
-              <p class="card-text">A chatbot for hiring</p>
-              <a class="card-text" href="https://github.com/harshpv07">
-                <i class="fab fa-github text-dark"></i>
-              </a>
+                            </h5>
+                            <br>
+                            <p class="card-text font-weight-light" style="color:rgb(255, 255, 255);">An AI-powered Q&A bot that creates a knowledge base for sales professionals just by uploading reference materials
+                                such as PDFs and URLs to the system. It extracts information from the PDFs and URLs and fetches data from it
+                                based on the input query from the user thereby reducing TAT for customer-facing professionals.
+                            <a class="nav-item nav-link" href="https://zenodo.org/record/3490390" target="_blank"
+                                    data-toggle="tooltip" data-placement="top" title="Learn more" style="display:inline-block; padding:0px; margin-left:10px;">
+                                    <i class="fa fa-external-link" aria-hidden="true" style="color:rgb(255, 255, 255);"></i>
+                              </a>
+                             </p>
+                            <ul class="list-horizontal font-weight-light" >
+                                <li>C++</li>
+                                <li>Python</li>
+                                <li>Raspberry Pi</li>
+                                <li>Arduino</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card slideanim" style="background-color:rgb(24, 24, 24); margin-bottom:50px; border-radius:20px;">
+                        <div class="card-body hvr-bob">
+                            <h5 class="card-title" style="font-weight: 300;font-size:24px;">Personal Assistant for the Blind
+                                <a href="<title>" target="_blank" data-toggle="tooltip" data-placement="top" title="View the source code on Github">
+                                    <img src="Images/Fork.png" class="rounded float-right" width="30" height="30" alt="" loading="lazy">
+                                </a>
+                            </h5>
+                            <br>
+                            <p class="card-text font-weight-light" style="color:rgb(255, 255, 255);">The system operates by concurrently processing live video inputs through face and object recognition modules.
+                                Upon detection of anomaly events, an interrupt is generated to promptly alert the nearest police depot. Interaction
+                                with the system is facilitated through a built-in chatbot, providing the administrator with a responsive interface for
+                                managing and addressing detected anomalies in real time
+                                <br><br><br><br>
+                            </p>
+                            <ul class="list-horizontal font-weight-light">
+                                <li>C++</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card slideanim" style="background-color:rgb(24, 24, 24); margin-bottom:50px; border-radius:20px;">
+                        <div class="card-body hvr-bob">
+                            <h5 class="card-title" style="font-weight: 300;font-size:24px;">NetBot
+                                <a href="<title>" target="_blank" data-toggle="tooltip" data-placement="top" title="View the source code on Github">
+                                    <img src="Images/Fork.png" class="rounded float-right" width="30" height="30" alt="" loading="lazy">
+                                </a>
+                            </h5>
+                            <br>
+                            <br>
+                            <p class="card-text font-weight-light" style="color:rgb(255, 255, 255);">The AI-powered policy management engine utilizes the Code Llamma LLM to interpret user intent expressed in
+                                plain English, eliminating the need for IOSXE CLI commands. Trained on a dataset of IOSXE commands, the
+                                model employs advanced language processing techniques to generate corresponding commands for suggested
+                                network policy changes. This innovative system enhances user accessibility by allowing for intuitive, language-based
+                                input, streamlining the policy adjustment process.
+                                
+                            </p>
+                            <ul class="list-horizontal font-weight-light">
+                                <li>Python</li>
+                                <li>AWS</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card slideanim" style="background-color:rgb(24, 24, 24); margin-bottom:50px; border-radius:20px;">
+                        <div class="card-body hvr-bob">
+                            <h5 class="card-title" style="font-weight: 300;font-size:24px;">Police Surveillance Assistant
+                                <a href="<title>" target="_blank" data-toggle="tooltip" data-placement="top" title="View the source code on Github">
+                                    <img src="Images/Fork.png" class="rounded float-right" width="30" height="30" alt="" loading="lazy">
+                                </a>
+                            </h5>
+                            <p class="card-text font-weight-light" style="color:rgb(255, 255, 255);">An intelligent surveillance system that can monitor activities and track miscreants at each location without human
+                                intervention. This project has been recognized by the Government of India via the SIH hackathon.The system operates by concurrently processing live video inputs through face and object recognition modules.
+                                Upon detection of anomaly events, an interrupt is generated to promptly alert the nearest police depot. Interaction
+                                with the system is facilitated through a built-in chatbot, providing the administrator with a responsive interface for
+                                managing and addressing detected anomalies in real time.
+                                
+                        
+                            </p>
+                            <ul class="list-horizontal font-weight-light">
+                                <li>JavaScript</li>
+                                <li>CSS</li>
+                                <li>Vue</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card slideanim" style="background-color:rgb(24, 24, 24); margin-bottom:50px; border-radius:20px;">
+                        <div class="card-body hvr-bob">
+                            <h5 class="card-title" style="font-weight: 300; font-size:24px;">DA - Developer Assistant
+                                <a href="<title>" target="_blank" data-toggle="tooltip" data-placement="top" title="View the source code on Github">
+                                    <img src="Images/Fork.png" class="rounded float-right" width="30" height="30" alt="" loading="lazy">
+                                </a>
+                            </h5>
+                            <br>
+                            <p class="card-text font-weight-light" style="color:rgb(255, 255, 255);">A quick and hassle-free development tool for developers which consist of quick project setup, source control, auto
+                                debugging. This project has been patented under the ID 201941053665, issued on 03/01/2020.
+                            <br><br>
+                            </p>
+                            <ul class="list-horizontal font-weight-light">
+                                <li>Java</li>
+                                <li>Python</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
         </div>
-      
     </div>
-  </div>
-</section>
 
+    <div class="jumbotron jumbotron-fluid" id="journey" style="background-color:rgb(255, 255, 255); margin-bottom:0px;">
+        <div class="container">
 
-
-<!-- Tech stack Section -->
-<section id = "section_techstack" style="background-image: url('static/images/bg.png'); width : 100%;">
-  <div class="container" style="padding-top : 20px ; padding-bottom : 20px">
-    <div class="row">
-      <div class="col-lg-12 p-5">
-        <h1 style = "text-align: center; color : white;">Tech Stack</h1>
-        <p style = "text-align: center; font-size : 20px; color : white;">These are some of the projects that I have undertaken during my time in school !! </p>
-      </div>
+    <div class="page-header">
+        <h1 id="timeline" class="display-4">Experience</h1>
     </div>
-    <div class="row">
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/aws.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
+            <br><br>
 
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/bootstrap.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
+    <ul class="timeline">
 
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/cpp.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
+        
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+          <div class="timeline-panel slideanim">
+            <div class="timeline-heading">
+              <h4 class="timeline-title text-center">Systems Engineer, Cisco</h4>
+              <br>
+                  <img src="Images/Cisco.png" class="img-fluid rounded mx-auto d-block" style="height:150px;width:150px;" alt="" loading="lazy">
+                <div class="text-center">
+                <button type="button" class="btn collap_btn text-muted" data-toggle="collapse" data-target="#demo1" style="padding-top:20px;padding-bottom:20px">Learn more</button>
+                </div>
+                <div id="demo1" class="collapse">
+                <p class="text-muted">Developed new features for Cisco’s configuration translation and configuration migration engine using ReactJS, and Django which resulted in a 30% increase in the adoption of Cisco products
+                <br><br>
+                Engaged in client interactions to design, deploy, and troubleshoot networks, while demonstrating expertise in
+                configuring and managing network appliances such as Cisco switches, routers, firewalls, and cloud security
+                solutions.                <br><br>
+                Automated network deployments for global clients using frameworks such as Terraform & Ansible which reduced
+                network deployment times by 90%                <br><br>
+                Obtained certifications such as CCNA, CCNP R&S, CCNP SCOR, DevNet, Meraki ECMS & AWS CSA.
+            </p>
+                </div>
+            </div>
+          </div>
+        </li>
 
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/django.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
-
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/flutter.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
-
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/keras.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
-  
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/lython.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
-
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/mongo.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
-
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/node.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
-
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/react.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
-
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/tensorflow.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
-
-      <div class="col-lg-2 p-0 m-0 py-2">
-        <img class="card-img-top" src = "static/stack_images/ansible.png" alt="Card image" style = "width : 80%;">
-      </li>
-      </div>
-
-    </div>
-  </div>
-</section>
+        <li class="timeline-inverted">
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+          <div class="timeline-panel slideanim">
+            <div class="timeline-heading">
+              <h4 class="timeline-title text-center">Software Engineering Intern</h4>
+              <br>
+                  <img src="Images/novartis.jpg" class="img-fluid rounded mx-auto d-block" style="height:150px;width:200px;" alt="" loading="lazy">
+                <div class="text-center">
+                <button type="button" class="btn collap_btn text-muted" data-toggle="collapse" data-target="#demo2" style="padding-top:20px;padding-bottom:20px">Learn more</button>
+                </div>
+                <div id="demo2" class="collapse">
+                <p class="text-muted">
+                    Developed an analytics dashboard using React, ChartJS, and Django, while creating ETL pipelines from various
+                    ITSM systems like Salesforce and ServiceNow through Snowflake                <br><br>
+                    Developed an ML-powered capacity planning service using boosting algorithms such as XGBoost to benchmark 25+
+                    project and team KPIs. This service was later integrated into the dashboard.
+                                    <br><br>
+                                    Deployed the entire project on Azure cloud and gained expertise in Azure services such as Blob storage, AKS
+                                    cluster, and Azure VMs, etc.                </p>
+                </div>
+            </div>
+          </div>
+        </li>
 
 
-<!-- 
-Timeline section -->
-<section id = "section_timeline">
-  <div class="container p-4 m-0">
-    <div class="row" style = "align-items: center;">
-      <div class="col-lg-5 px-5 py-5 mx-auto" style = "text-align: center;">
-        <h1>My work-experience</h1>
-        <p1>This is where I had previously worked !! </p1>
-      </div>
-      <div class="col-lg-4">
-        <!-- <h4 style="margin-left: 1.2rem;">Work Experience</h4> -->
-        <ul class="timeline-3">
-          <li>
-            <a href="#!">Cisco Systems</a>
-            <p class="float-end">2021 - 2023</p>
-            <p class="mt-2">Solutions Engineer</p>
-         </li>   
-         
-         <li>
-          <a href="#!">Novartis AG</a>
-          <p class="float-end">2021 - 2021</p>
-          <p class="mt-2">Software Engineering Intern</p>
-       </li> 
 
-       <li>
-        <a href="#!">VIT</a>
-        <p class="float-end">2019 - 2021</p>
-        <p class="mt-2">Research Assistant</p>
-     </li> 
+                        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+          <div class="timeline-panel slideanim">
+            <div class="timeline-heading">
+              <h4 class="timeline-title text-center">Research Assistant</h4>
+              <br>
+                  <img src="Images/VIT.png" class="img-fluid rounded mx-auto d-block" style="height:150px;width:200px;" alt="" loading="lazy">
+                <div class="text-center">
+                <button type="button" class="btn collap_btn text-muted" data-toggle="collapse" data-target="#demo3" style="padding-top:20px;padding-bottom:20px">Learn more</button>
+                </div>
+                <div id="demo3" class="collapse">
+                <p class="text-muted">
+                    Conducted a research project on image captioning for surveillance applications, employing Xception CNN and
+                    LSTM networks trained on the Flickr8K dataset.                    <br><br>
+                    Implemented and fine-tuned image augmentation methods, including RotNet and rotation-invariant CNN, to
+                    significantly enhance model accuracy, specifically tailored for CCTV applications                    <br><br>
+                    This research has been published as ”Captioning for motion detection for video surveillance
+                    applications using deep learning” (IJITEE)
+                                    </p>
+                </div>
+            </div>
+          </div>
+        </li>
 
-     <li>
-      <a href="#!">Siam Computing</a>
-      <p class="float-end">2019 - 2019</p>
-      <p class="mt-2">NLP Engineering Intern</p>
-    </li> 
-
-    
-        </ul>
-      </div>
-      
-    </div>
-  </div>
-
-</section>
  
+        <li class="timeline-inverted">
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+          <div class="timeline-panel slideanim">
+            <div class="timeline-heading">
+              <h4 class="timeline-title text-center">NLP Engineering Intern</h4>
+              <br>
+                  <img src="Images/siam.png" class="img-fluid rounded mx-auto d-block" style="height:150px;width:200px;" alt="" loading="lazy">
+                <div class="text-center">
+                <button type="button" class="btn collap_btn text-muted" data-toggle="collapse" data-target="#demo4" style="padding-top:20px;padding-bottom:20px">Learn more</button>
+                </div>
+                <div id="demo4" class="collapse">
+                <p class="text-muted">
+                    Developed a customer-centric chatbot using RASA, featuring intricate dialog routes for distinct functions (e.g.,
+                    recruitment, sales). Achieved a 40% reduction in contact center interactions through the deployment of an
+                    intelligent chatbot assistant.
+                                        <br><br>
+                                        Developed a Django API service for the chatbot to interact with the PHP backend for data collection and storage.                    <br><br>
+                                        Engineered a smart attendance system leveraging facial encodings for recognition and attendance marking.
+                                        Deployed it locally on a Raspberry Pi.                   
+              </p>
+                </div>
+            </div>
+          </div>
+        </li>
 
 
 
-<!-- Contact Information Section -->
-<section id = "section_contact" style="background-image: url('static/images/contact_background.jpg'); width : 100%;"> 
-  <div class="container">
-    <div class="row" style = "align-items: center;">
-      <div class="col-lg-4 " style = 'text-align : center;'>
-        <h2>Would you like to reach out to me? </h2>
-        <p>Send in your queries here and I will reach out to you at the earliest</p>
-      </div>
-      <div class = "col-4"></div>
-      <div class="col-lg-4 p-4">
-        <form action = "/" method = "POST"> 
-          <label for="fname">First Name</label>
-          <input id="your_name" type="text" name="your_name" value="" placeholder="Enter your name">
-          <label for="country">Email Address</label>
-          <input id="your_email" type="text" name="your_email" value="" placeholder = "Enter your email">
-          <label for="Phone number">Phone Number</label>
-          <input id="your_phone" type="text" name="your_phone" value="" placeholder=" Enter your phone number">
-          <label for="query">Query</label>
-          <input id="your_query" type="text" name="your_query" value="" style="height:200px">
-          <input type="submit" value="Submit">
-      
-        </form>
-      </div>
-     
+
+
+
+        </div>
     </div>
-  </div>
-</section>
+
+    <div class="jumbotron jumbotron-fluid" id="tech" style="background-color:rgb(18, 18, 18); margin-bottom:0px;">
+        <div class="container" style="color:rgb(255, 255, 255);">
+            <h1 class="display-4" style="color:rgb(132, 201, 251);">Technical Skills</h1>
+            <br><br><br>
+            <ul class="grid_horizontal">
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/python.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Python</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/java.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive float-center">
+                    <p class="text-center">Java</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/c2.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">C++</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/c.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">C</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/matlab.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Matlab</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/HTML.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">HTML</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/css.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">CSS</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/js.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">JS</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/jquery.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">JQuery</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/angular.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Angular</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/react.png" alt="" style="height:70px; width:60px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">React</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/php.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">PHP</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/dj.png" alt="" style="height:70px; width:75px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Django</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/mono.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">MongoDB</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/mysql.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">MySQL</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/sqlite.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">SQLite</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/arduino.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Arduino</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/raspberry_pi.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Raspberry Pi</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/open.png" alt="" style="height:70px; width:75px; padding-bottom:10px; padding-top:10px;  display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">OpenGL</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/windows.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Windows</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/ubuntu.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Ubuntu</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/kali.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive float-center">
+                    <p class="text-center">Kali Linux</p>
+                </li>  
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/aws.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">AWS</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/tf.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Terraform</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/docker.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Docker</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/kubernetes.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Kubernetes</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/git.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Git</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/jira.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Jira</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/gns.png" alt="" style="height:70px; width:70px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">GNS3</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/ansible.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Ansible</p>
+                </li>
+                <li class="slideanim" style="background-color:rgb(24, 24, 24); border-radius:10px; height:110px; width:110px;">
+                 <img src="Images/heroku.png" alt="" style="height:70px; width:50px; padding-bottom:10px; padding-top:10px; display: block; margin: 0 auto;" class="image img-responsive">
+                    <p class="text-center">Heroku</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
 
 
-<footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Copyright: harshpv07 Designs
-    <a class="text-white" href="https://mdbootstrap.com/"></a>
-  </div>
-  <!-- Copyright -->
-</footer>
+    <div class="jumbotron jumbotron-fluid" id="about"  style=" background-color:rgb(255, 255, 255); margin-bottom:0px;">
+      <div class="container" >
+        <h1 class="display-4">More about me</h1>
+        <br>
+          <br>
 
-</body>
+
+          <div class="container text-center my-3 slideanim">
+
+            <div class="row mx-auto my-auto">
+                <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner w-100" role="listbox" >
+                        <div class="carousel-item active">
+                            <div class="col-md-4">
+                                <div class="card card-body" style="height:600px; ">
+                                    <div class="container_outer">
+                                      <img src="Images/certificate.png" alt="" style="height:150px; width:150px; margin: auto; margin-top:210px;" class="image img-responsive">
+                                      <div class="overlay">
+                                        <div class="text">
+                                            <ul class="list-vertical" style="text-align:center;">
+                                                <li style="font-size:24px;">Certifications</li>
+                                                <hr>
+                                                <li>Cisco Certified DevNet Associate</li>
+                                                <br>
+                                                <li>Cisco Certified Network Professional - Enterprise</li>
+                                                <br>
+                                                <li>Cisco Certified Network Specialist - Enterprise Core</li>
+                                                <br>
+                                                <li>Cisco Certified Network Specialist - Enterprise Advanced Infrastructure Implementation</li>
+                                                <br>
+                                                <li>Cisco Certified Network Professional - Routing and Switching</li>
+                                                <br>
+                                                <li>Cisco Certified Network Associate - Routing and Switching</li>
+                                                <br>
+                                                <li>AWS - Cloud Solutions Architect</li>
+                                                <br>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card card-body" style="height:600px;">
+                                    <div class="container_outer">
+                                      <img src="Images/award.png" alt="" style="height:150px; width:150px; margin: auto; margin-top:210px;" class="image img-responsive">
+                                      <div class="overlay">
+                                        <div class="text">
+                                            <ul class="list-vertical" style="text-align:center;">
+                                                <li style="font-size:24px;">Awards</li>
+                                                <hr>
+                                                <li>FY23 Achievers Award, Cisco</li>
+                                                <br>
+                                                <li>FY23 Q4 TSS Excellence Award, Cisco</li>
+                                                <br>
+                                                <li>ASE Excellence Award - Q3 FY22 APJC Region, Cisco</li>
+                                                <br>
+                                                <li>Winner - SIH 2020, Government of India</li>
+                                                <br>
+                                                <li>Runners up - Hack the COVID, IBM</li>
+                                                <br>
+                                                <li>Winners - Parallax Hackathon, VIT</li>
+                                                <br>
+                                                <li>Winner - JU Hackathon, McAfee</li>
+                                                <br>
+                                                
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card card-body" style="height:600px; ">
+                                    <div class="container_outer">
+                                      <img src="Images/education.png" alt="" style="height:150px; width:150px; margin: auto; margin-top:210px;" class="image img-responsive">
+                                      <div class="overlay">
+                                        <div class="text">
+                                            <ul class="list-vertical " style="text-align:center;">
+                                                <li style="font-size:24px;">Education</li>
+                                                <hr>
+                                                <li>Master of Science</li>
+                                                <li>Computer Science</li>
+                                                <li>University of Illinois, Urbana Champaign</li>
+                                                <li>4.0 GPA</li>
+                                                <br>
+                                                <li>Bachelor of Engineering</li>
+                                                <li>Computer Science and Engineering</li>
+                                                <li>Vellore Institute of Technology</li>
+                                                <li>8.66 CGPA</li>
+                                                <br>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card card-body" style="height:600px; ">
+                                    <div class="container_outer">
+                                      <img src="Images/extra.png" alt=""  style="height:200px; width:200px; margin: auto; margin-top:175px;" class="image img-responsive">
+                                      <div class="overlay">
+                                        <div class="text">
+                                            <ul class="list-vertical" style="text-align:center;">
+                                                <li style="font-size:24px;">Extracurricular Activities</li>
+                                                <hr>
+                                                <br>
+                                                <li>Volunteer at NGOs GiftAbled and eVidyaloka</li>
+                                                <br>
+                                                <li>Early in Career Network (ECN) APJC Newsletter Team, Cisco</li>
+                                                <br>
+
+                                                <li>Keyboard and Guitar</li>
+                                                <br>
+                                                <li>Football Player, Swimmer</li>
+                                                <br>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true" style="height:30px;width:30px;"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true" style="height:30px;width:30px;"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+<nav class="navbar navbar-expand-sm navbar-expand-lg" style="background-color:rgb(18, 18, 18);">
+    <p class="font-weight-light" style="margin-top:10px;color:rgb(255,255,255);">
+      </p>
+
+        <ul class="navbar-nav ml-auto" >
+            <li class="nav-item">
+                <a class="nav-item nav-link active" href="https://github.com/shimonaprabhu" target="_blank"
+                        data-toggle="tooltip" data-placement="top" title="Find me on GitHub!">
+                        <i class="fa fa-github" style="font-size:24px;color:rgb(255,255,255);"></i>
+                    </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link" href="https://www.linkedin.com/in/shimona-prabhu-227b22106/"
+                        target="_blank" data-toggle="tooltip" data-placement="top" title="Find me on LinkedIn!">
+                        <i class="fa fa-linkedin" style="font-size:24px;color:rgb(255,255,255);"></i>
+                    </a>
+            </li>
+            <li class="nav-item">
+                 <a class="nav-item nav-link" href="mailto:smprabhu@ucdavis.edu" target="_blank"
+                        data-toggle="tooltip" data-placement="top" title="Get in touch with me!">
+                        <i class="fa fa-envelope" style="font-size:24px;color:rgb(255,255,255);"></i>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+
+<script src="float-panel.js"></script>
+
 </html>
